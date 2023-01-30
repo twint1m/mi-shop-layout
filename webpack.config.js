@@ -5,7 +5,6 @@ module.exports = {
     entry: {
         main: './index.js',
         catalog: './catalog.js',
-        admin: './admin.js',
     },
     output: {
         filename: './js/[name].js',
