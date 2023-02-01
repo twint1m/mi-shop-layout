@@ -114,14 +114,7 @@ export const addProduct = () => {
   });
 
   saveBtn.addEventListener("click", () => {
-    console.log(productData);
-    postData("/products", {
-      method: "POST",
-      body: JSON.stringify(productData),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    }).then(() => {
+    postData("/products", productData).then(() => {
         nameInp.value = ''
         titleInp.value = ''
         priceInp.value = ''
